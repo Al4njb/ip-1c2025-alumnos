@@ -31,11 +31,8 @@ def getAllImages():
             "height": raw_data.get("height"),
             "image": raw_data["sprites"]["other"]["official-artwork"]["front_default"],
             "hability":raw_data['abilities'],
-            "base":raw_data.get('base_experience'),
-            "types1":[t["type"]["name"] for t in raw_data.get("types",[])]
-             
-                        #"url":raw_data.get("sprites",{}).get("front_default"),
-
+            "base":raw_data.get('base_experience')
+            
         }
         
         Cards.append(card)
