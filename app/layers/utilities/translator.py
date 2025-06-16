@@ -19,7 +19,7 @@ def fromRequestIntoCard(poke_data):
 def getTypes(poke_data):
     types = []
     for type in poke_data.get('types'):
-        t = safe_get(type, 'type','name' )
+        t = safe_get(type, 'type','name')
         types.append(t)
     return types
 
